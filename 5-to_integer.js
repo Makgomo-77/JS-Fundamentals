@@ -4,5 +4,5 @@ if (!isNaN(arg) && Number.isInteger(Number(arg))) {
 }else {
   console.log('Not a number');
 }
-# My number:89
-# My number:-454
+My number:89
+My number:-4545
