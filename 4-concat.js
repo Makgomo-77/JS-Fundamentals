@@ -1,6 +1,6 @@
-function printArguments(arg1, arg2){
-console.log(`Argument 1: ${arg1} is ${arg2}`);
+if (process.argv.length !== 4) {
+  console.log("Usage:node printArgs.js <arg1> <arg2>");
+  process.exit(1);
 }
-printArguments("python fun");
-printArguments("undefined");
-printArguments("HBDN ");
+const [, , arg1, arg2] =process.argv;
+console.log(`${arg1} is ${arg2}`);
